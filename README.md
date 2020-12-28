@@ -13,7 +13,7 @@ Program contains a simple calculator class that helps us perform basic calculati
 
 pip install git+https://github.com/LeonMilosevic/calculator
 
-Install Pytest with pip install,
+Install Pytest with !pip install pytest ipython_pytest,
 
 Import Calculator from calculator_package
 

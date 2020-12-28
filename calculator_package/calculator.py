@@ -12,26 +12,31 @@ class Calculator:
     Methods
     -------
     add(number_to_add):
-        adds a number to result attribute
+        adds a number to the current state of calculator 'result' attribute
+    
 
     substract(number_to_substract):
-        nsubstracts a number from result attribute
+        substracts a number from the current state of calculator 'result' attribute
+
 
     multiply(multiplier):
-        multiplies the result attribute with multiplier
+        multiplies the current state of calculator 'result' attribute with multiplier
+
 
     devide(divisor):
-        devides the result attribute with divisor
+        devides the current state of calculator 'result' attribute with divisor
+
 
     sqrt():
-        square roots the result attribute
+        square roots the current state of calculator 'result' attribute
+
 
     reset_result():
-        sets the result attribute to 0
+        sets the current state of calculator 'result' attribute to 0
     """
     def __init__(self, result: float = 0):
         """
-        Constructs a default result attribute if nothing is passed when creating the Calculator class.
+        Constructs a default state 'result' attribute if nothing is passed when creating the Calculator class.
         
         Args:
             result: (float, optional)
@@ -42,7 +47,7 @@ class Calculator:
     @property
     def result(self) -> float:
         """
-        Getter for the result attribute. Allows user to see their current result.
+        Getter for the current state 'result' attribute. Allows user to see their current state of calculator 'result'.
 
         Returns
         -------
@@ -54,7 +59,7 @@ class Calculator:
     # methods
     def add(self, number_to_add: float) -> float:
         """
-        Adds the 'number_to_add' to 'result'. Returnes the result attribute.
+        Adds the 'number_to_add' to the current state of calculator 'result'. Returnes the current state of calculator 'result' attribute.
 
         Parameters
         ----------
@@ -62,14 +67,14 @@ class Calculator:
 
         Returns
         -------
-        updated 'result'
+        updated state of calculator 'result' attribute
         """
         self.__result += number_to_add
         return self.__result
 
     def substract(self, number_to_substract: float) -> float:
         """
-        Substracts the 'result' from 'number_to_substract'. Returnes the result attribute.
+        Substracts the current state of calculator 'result' from 'number_to_substract'. Returnes the current state of calculator 'result' attribute.
 
         Parameters
         ----------
@@ -77,14 +82,14 @@ class Calculator:
 
         Returns
         -------
-        updated 'result'
+        updated state of calculator 'result' attribute
         """
         self.__result -= number_to_substract
         return self.__result
 
     def multiply(self, multiplier: float) -> float:
         """
-        Multiplies the 'result' with 'multiplier'. Returnes the result attribute.
+        Multiplies the current state of calculator 'result' with 'multiplier'. Returnes the current state of calculator 'result' attribute.
 
         Parameters
         ----------
@@ -92,14 +97,14 @@ class Calculator:
 
         Returns
         -------
-        updated 'result'
+        updated state of calculator 'result' attribute
         """
         self.__result *= multiplier
         return self.__result
 
     def devide(self, divisor: float) -> float:
         """
-        Devides the 'result' with 'divisor'. Returnes the result attribute.
+        Devides the current state of calculator 'result' with 'divisor'. Returnes the current state of calculator 'result' attribute.
 
         Parameters
         ----------
@@ -107,14 +112,14 @@ class Calculator:
 
         Returns
         -------
-        updated 'result'
+        updated state of calculator 'result' attribute
         """
         self.__result /= divisor
         return self.__result
     
     def sqrt(self) -> float:
         """
-        Square roots the current 'result'. Returnes the result attribute.
+        Square roots the current state of calculator 'result' attribute. Returnes the current state of calculator 'result' attribute.
 
         Parameters
         ----------
@@ -122,14 +127,14 @@ class Calculator:
 
         Returns
         -------
-        Square rooted 'result'
+        Square rooted state 'result'
         """
         self.__result = self.__result**0.5
         return self.__result
     
     def reset_result(self) -> float:
         """
-        Resets the 'result'. Returnes the result attribute.
+        Resets the current state of calculator 'result'. Returnes the current state of calculator 'result' attribute.
 
         Parameters
         ----------
@@ -137,7 +142,7 @@ class Calculator:
 
         Returns
         -------
-        updated 'result'
+        updated state 'result'
         """
         self.__result = 0
         return self.__result

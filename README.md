@@ -9,9 +9,9 @@ Program contains a simple calculator class that helps us perform basic calculati
 - Python
 - Pytest
 
-### How to use it?
+### How to use it with Google Colab?
 
-##### where to download
+pip install git+https://github.com/LeonMilosevic/calculator
 
 Install Pytest with pip install,
 

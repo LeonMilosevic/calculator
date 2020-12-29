@@ -11,12 +11,16 @@ Program contains a simple calculator class that helps us perform basic calculati
 
 ### How to use it with Google Colab?
 
+Fetch the module:
 pip install git+https://github.com/LeonMilosevic/calculator
 
-Install Pytest with !pip install pytest ipython_pytest,
+Install Pytest with:
+!pip install pytest ipython_pytest,
 
-Import Calculator from calculator_package
+Import package:
+from calculator_package.calculator import Calculator
 
+Create class:
 calculate = Calculator(10)
 
 ### Use features
